@@ -80,8 +80,8 @@
           id="topBar"
           :class="{'-mt-10 md:-mt-12' : isSticky}">
           <div
-            class="container w-full max-w-screen-xl mx-auto px-4 flex items-center justify-between space-x-6">
-            <div class="mx-auto md:m-0 flex">
+            class="container w-full max-w-[1300px] mx-auto px-4 flex items-center justify-between space-x-6">
+            <div class="md:m-0 flex">
               <ul
                 class="flex items-center justify-center space-x-2 sm:space-x-4">
                 <li class="navbar__social-item text-white">
@@ -179,7 +179,7 @@
         <!-- DESKTOP HEADER -->
         <div
           :class="isSticky ? 'h-12 lg:h-[60px]' : 'h-16 lg:h-[75px]'"
-          class="container max-w-screen-xl mx-auto px-4 py-1 flex items-center transition-all">
+          class="container max-w-[1300px] mx-auto px-4 py-1 flex items-center transition-all">
           <div class="flex items-center justify-between w-full">
             <!-- HEADER LOGO -->
             <div>
@@ -349,7 +349,7 @@
             </h1>
             <!-- META TEXT -->
             <p
-              class="text-center text-base sm:text-lg font-normal text-white max-w-xl mx-auto leading-9">
+              class="text-center text-base sm:text-lg font-normal text-white max-w-xl mx-auto leading-8 sm:leading-9">
               We consistently outperform other fintech advisory and
               consulting firms by providing highly experienced,
               multi-dimensional, individualized support from a
@@ -359,7 +359,7 @@
             <div class="mt-7">
               <a
                 href="#"
-                class="before:rounded-md before:block before:absolute before:left-auto before:right-0 before:inset-y-0 before:-z-[1] before:bg-[#00FF00] before:w-0 hover:before:w-full hover:before:left-0 hover:before:right-auto before:transition-all leading-none px-12 py-2 font-medium text-black text-sm md:text-lg relative after:block after:absolute border border-black/80 hover:border-transparent rounded-sm transition-all after:inset-0 after:-z-[2] after:bg-white after:rounded-md after:transition-all uppercase">
+                class="before:rounded-sm before:block before:absolute before:left-auto before:right-0 before:inset-y-0 before:-z-[1] before:bg-[#00FF00] before:w-0 hover:before:w-full hover:before:left-0 hover:before:right-auto before:transition-all leading-none px-12 py-2 font-medium text-black text-sm md:text-lg relative after:block after:absolute border border-black/80 hover:border-transparent rounded-sm transition-all after:inset-0 after:-z-[2] after:bg-white after:rounded-sm after:transition-all uppercase">
                 ELIMINATE COMPLICATED
               </a>
             </div>
@@ -371,6 +371,22 @@
         </div>
       </section>
       <!-- HERO SECTION END -->
+      <!-- JOIN TEAM SECTION START -->
+      <section
+        class="bg-[#00ff00] text-center px-4 flex items-center justify-center py-6">
+        <div class="flex items-center gap-6">
+          <span
+            class="text-lg sm:text-2xl text-white font-bold uppercase"
+            >Join our team!</span
+          >
+          <a
+            href="#"
+            class="uppercase text-sm sm:text-base font-semibold text-[#00ff00] bg-white py-1 px-6 rounded-sm hover:text-black transition-all"
+            >Learn more</a
+          >
+        </div>
+      </section>
+      <!-- JOIN TEAM SECTION END -->
       <div class="h-screen w-full bg-blue-600"></div>
       <div class="h-screen w-full bg-blue-700"></div>
       <div class="h-screen w-full bg-blue-800"></div>
