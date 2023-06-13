@@ -31,6 +31,32 @@
       <header
         class="fixed w-full top-0 text-base z-50 shadow-md bg-black"
         x-data="{
+            headerLinks: [
+              {
+                title: 'solutions',
+                url: '#',
+              },
+              {
+                title: 'About',
+                url: '#',
+              },
+              {
+                title: 'Team',
+                url: '#',
+              },
+              {
+                title: 'Portfolio',
+                url: '#',
+              },
+              {
+                title: 'Resources',
+                url: '#',
+              },
+              {
+                title: 'Blog',
+                url: '#',
+              },
+            ],
             topBar: document.querySelector('#topBar'),
             isSticky: false,
             isNavigationMobileOpen: false,
@@ -56,7 +82,8 @@
           <div
             class="container w-full max-w-screen-xl mx-auto px-4 flex items-center justify-between space-x-6">
             <div class="mx-auto md:m-0 flex">
-              <ul class="flex items-center justify-center space-x-4">
+              <ul
+                class="flex items-center justify-center space-x-2 sm:space-x-4">
                 <li class="navbar__social-item text-white">
                   <a
                     href="#"
@@ -105,16 +132,16 @@
               </ul>
               <!-- SEPERATOR -->
               <div
-                class="w-0.5 rounded-md h-5 my-auto bg-black mx-4"></div>
+                class="hidden md:block w-0.5 rounded-md h-5 my-auto bg-black mx-4"></div>
 
               <!-- AFFILIATE LINK -->
               <a
-                class="text-black text-sm rounded-full py-1 px-11 hover:text-black/80 transition-all group border border-black"
+                class="hidden md:block text-black text-sm rounded-full py-1 px-3 lg:px-11 hover:text-black/80 transition-all group border border-black"
                 href="#">
                 BECOME AN AFFILIATE
               </a>
             </div>
-            <div class="relative w-1/6 hidden md:block">
+            <div class="relative w-1/6 hidden lg:block">
               <form class="w-full">
                 <input
                   type="search"
@@ -131,32 +158,33 @@
                   class="w-full h-auto" />
               </span>
             </div>
-            <div class="hidden md:flex">
+            <div class="flex">
               <a
-                class="inline-flex items-center space-x-2 text-white text-sm bg-black/80 rounded-full py-1 px-11 hover:text-[#00FF00] transition-all group"
+                class="inline-flex items-center space-x-2 text-white text-xs sm:text-sm bg-black/80 rounded-full py-1 px-1.5 md:px-3 lg:px-11 hover:text-[#00FF00] transition-all group"
                 href="#">
                 <span>SIGN UP - IT’S FREE</span>
               </a>
               <!-- SEPERATOR -->
               <div
-                class="w-0.5 rounded-md h-5 my-auto bg-black mx-4"></div>
+                class="w-0.5 rounded-md h-5 my-auto bg-black mx-2 sm:mx-4"></div>
               <a
                 href="#"
-                class="inline-flex items-center space-x-2 hover:text-gray-100 text-sm">
-                <span>MEMBER SIGN IN</span>
+                class="inline-flex items-center space-x-2 hover:text-gray-100 text-xs sm:text-sm">
+                <span class="hidden sm:inline-block">MEMBER </span>
+                <span>SIGN IN</span>
               </a>
             </div>
           </div>
         </div>
         <!-- DESKTOP HEADER -->
         <div
-          class="container max-w-screen-xl mx-auto px-4 lg:py-1 lg:h-24 flex items-center">
+          class="container max-w-screen-xl mx-auto px-4 py-1 h-16 lg:h-24 flex items-center">
           <div class="flex items-center justify-between w-full">
             <!-- HEADER LOGO -->
             <div>
               <a
                 href="#"
-                class="block w-56 hover:opacity-60 transition-all">
+                class="block w-32 lg:w-56 hover:opacity-60 transition-all">
                 <img
                   src="images/KnowAPE_Logo-OnLight.png"
                   alt="knowAPE Logo"
@@ -169,53 +197,16 @@
               <ul
                 class="hidden lg:flex items-center text-sm font-bold leading-none text-white gap-x-7">
                 <!-- NAVIGATION MENU ITEM -->
-                <li class="relative py-5 text-center">
-                  <a
-                    href="#"
-                    class="transition-all hover:text-[#00FF00] uppercase"
-                    >SOLUTIONS</a
-                  >
-                </li>
-                <!-- NAVIGATION MENU ITEM -->
-                <li class="relative py-5 text-center">
-                  <a
-                    href="#"
-                    class="transition-all hover:text-[#00FF00] uppercase"
-                    >About</a
-                  >
-                </li>
-                <!-- NAVIGATION MENU ITEM -->
-                <li class="relative py-5 text-center">
-                  <a
-                    href="#"
-                    class="transition-all hover:text-[#00FF00] uppercase"
-                    >Team</a
-                  >
-                </li>
-                <!-- NAVIGATION MENU ITEM -->
-                <li class="relative py-5 text-center">
-                  <a
-                    href="#"
-                    class="transition-all hover:text-[#00FF00] uppercase"
-                    >Portfolio</a
-                  >
-                </li>
-                <!-- NAVIGATION MENU ITEM -->
-                <li class="relative py-5 text-center">
-                  <a
-                    href="#"
-                    class="transition-all hover:text-[#00FF00] uppercase"
-                    >Resources</a
-                  >
-                </li>
-                <!-- NAVIGATION MENU ITEM -->
-                <li class="relative py-5 text-center">
-                  <a
-                    href="#"
-                    class="transition-all hover:text-[#00FF00] uppercase"
-                    >Blog</a
-                  >
-                </li>
+                <template
+                  x-for="(headerLink, index) in headerLinks"
+                  :key="index">
+                  <li class="relative py-5 text-center">
+                    <a
+                      :href="headerLink.url"
+                      class="transition-all hover:text-[#00FF00] uppercase"
+                      x-text="headerLink.title"></a>
+                  </li>
+                </template>
               </ul>
             </nav>
             <!-- SHARE, CTA & HAMBURGER ICON-->
@@ -310,15 +301,19 @@
             <nav class="mr-5">
               <ul>
                 <!-- MOBILE MENU ITEM -->
-                <li
-                  class="relative block border-b-[#0b2c3d] border-b first:border-t first:border-t-[#0b2c3d]">
-                  <!-- MENU ITEM BUTTON -->
-                  <a
-                    href="#"
-                    class="block capitalize font-normal text-black group-hover:text-[#00FF00] text-base my-2 py-1 px-5">
-                    GOOD CAUSES
-                  </a>
-                </li>
+                <template
+                  x-for="(headerLink, index) in headerLinks"
+                  :key="index">
+                  <li
+                    class="relative block border-b-[#0b2c3d] border-b first:border-t first:border-t-[#0b2c3d]">
+                    <!-- MENU ITEM BUTTON -->
+                    <a
+                      :href="headerLink.url"
+                      class="block capitalize font-normal text-black group-hover:text-[#00FF00] text-base my-2 py-1 px-5"
+                      x-text="headerLink.title">
+                    </a>
+                  </li>
+                </template>
                 <!-- MOBILE MENU ITEM -->
                 <li
                   class="relative block border-b-[#0b2c3d] border-b first:border-t first:border-t-[#0b2c3d]">
@@ -326,47 +321,7 @@
                   <a
                     href="#"
                     class="block capitalize font-normal text-black group-hover:text-[#00FF00] text-base my-2 py-1 px-5">
-                    CREATIVE PROJECTS
-                  </a>
-                </li>
-                <!-- MOBILE MENU ITEM -->
-                <li
-                  class="relative block border-b-[#0b2c3d] border-b first:border-t first:border-t-[#0b2c3d]">
-                  <!-- MENU ITEM BUTTON -->
-                  <a
-                    href="#"
-                    class="block capitalize font-normal text-black group-hover:text-[#00FF00] text-base my-2 py-1 px-5">
-                    VENTURE CAPITAL
-                  </a>
-                </li>
-                <!-- MOBILE MENU ITEM -->
-                <li
-                  class="relative block border-b-[#0b2c3d] border-b first:border-t first:border-t-[#0b2c3d]">
-                  <!-- MENU ITEM BUTTON -->
-                  <a
-                    href="#"
-                    class="block capitalize font-normal text-black group-hover:text-[#00FF00] text-base my-2 py-1 px-5">
-                    AFFORDABLE GROWTH CAPITAL
-                  </a>
-                </li>
-                <!-- MOBILE MENU ITEM -->
-                <li
-                  class="relative block border-b-[#0b2c3d] border-b first:border-t first:border-t-[#0b2c3d]">
-                  <!-- MENU ITEM BUTTON -->
-                  <a
-                    href="#"
-                    class="block capitalize font-normal text-black group-hover:text-[#00FF00] text-base my-2 py-1 px-5">
-                    REVENUE SHARE
-                  </a>
-                </li>
-                <!-- MOBILE MENU ITEM -->
-                <li
-                  class="relative block border-b-[#0b2c3d] border-b first:border-t first:border-t-[#0b2c3d]">
-                  <!-- MENU ITEM BUTTON -->
-                  <a
-                    href="#"
-                    class="block capitalize font-normal text-black group-hover:text-[#00FF00] text-base my-2 py-1 px-5">
-                    SPONSORSHIP
+                    Contact
                   </a>
                 </li>
               </ul>
