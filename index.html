@@ -29,7 +29,7 @@
     <main class="h-full font-['Avenir']">
       <!-- STICKY HEADER START -->
       <header
-        class="fixed w-full bg-white/80 top-0 text-base z-50 shadow-md"
+        class="fixed w-full top-0 text-base z-50 shadow-md bg-black"
         x-data="{
             topBar: document.querySelector('#topBar'),
             isSticky: false,
@@ -149,36 +149,31 @@
           </div>
         </div>
         <!-- DESKTOP HEADER -->
-        <div class="container max-w-screen-xl mx-auto px-4 lg:py-1">
-          <div class="flex items-center justify-between">
-            <!-- LEFT HAMBURGER -->
-            <div class="w-5 gap-y-1.5 flex-col mr-8 hidden lg:flex">
-              <span class="block h-px w-full bg-black"></span>
-              <span class="block h-px w-[70%] bg-black"></span>
-              <span class="block h-px w-[70%] bg-black"></span>
-            </div>
+        <div
+          class="container max-w-screen-xl mx-auto px-4 lg:py-1 lg:h-24 flex items-center">
+          <div class="flex items-center justify-between w-full">
             <!-- HEADER LOGO -->
             <div>
               <a
                 href="#"
-                class="block w-24 h-12 hover:opacity-60 transition-all">
+                class="block w-56 hover:opacity-60 transition-all">
                 <img
-                  src="images/mobWOW-Base-Logo-Red (2).svg"
-                  alt="Logo"
-                  class="h-full w-full" />
+                  src="images/KnowAPE_Logo-OnLight.png"
+                  alt="knowAPE Logo"
+                  class="h-auto w-full" />
               </a>
             </div>
             <!-- HEADER NAVIGATION-->
-            <nav class="flex items-center max-w-2xl mx-auto">
+            <nav class="flex items-center max-w-2xl ml-auto">
               <!-- DESKTOP NAVIGATION MENU -->
               <ul
-                class="hidden lg:flex items-center text-sm leading-none text-black/75 gap-x-2.5">
+                class="hidden lg:flex items-center text-sm font-bold leading-none text-white gap-x-7">
                 <!-- NAVIGATION MENU ITEM -->
                 <li class="relative py-5 text-center">
                   <a
                     href="#"
                     class="transition-all hover:text-[#00FF00] uppercase"
-                    >Good causes</a
+                    >SOLUTIONS</a
                   >
                 </li>
                 <!-- NAVIGATION MENU ITEM -->
@@ -186,7 +181,7 @@
                   <a
                     href="#"
                     class="transition-all hover:text-[#00FF00] uppercase"
-                    >Creative Projects</a
+                    >About</a
                   >
                 </li>
                 <!-- NAVIGATION MENU ITEM -->
@@ -194,7 +189,7 @@
                   <a
                     href="#"
                     class="transition-all hover:text-[#00FF00] uppercase"
-                    >Venture Capital</a
+                    >Team</a
                   >
                 </li>
                 <!-- NAVIGATION MENU ITEM -->
@@ -202,7 +197,7 @@
                   <a
                     href="#"
                     class="transition-all hover:text-[#00FF00] uppercase"
-                    >Afforable growth capital</a
+                    >Portfolio</a
                   >
                 </li>
                 <!-- NAVIGATION MENU ITEM -->
@@ -210,7 +205,7 @@
                   <a
                     href="#"
                     class="transition-all hover:text-[#00FF00] uppercase"
-                    >REVENUE SHARE</a
+                    >Resources</a
                   >
                 </li>
                 <!-- NAVIGATION MENU ITEM -->
@@ -218,7 +213,7 @@
                   <a
                     href="#"
                     class="transition-all hover:text-[#00FF00] uppercase"
-                    >SPONSORSHIP</a
+                    >Blog</a
                   >
                 </li>
               </ul>
@@ -248,8 +243,8 @@
               <li class="grow">
                 <a
                   href="#"
-                  class="before:rounded-md before:block before:absolute before:left-auto before:right-0 before:inset-y-0 before:-z-[1] before:bg-[#00FF00] before:w-0 hover:before:w-full hover:before:left-0 hover:before:right-auto before:transition-all leading-none px-12 py-2 capitalize font-medium text-black hidden sm:block text-sm relative after:block after:absolute border border-black/80 hover:border-transparent rounded-md transition-all hover:text-white after:inset-0 after:-z-[2] after:bg-white after:rounded-md after:transition-all">
-                  Learn
+                  class="before:rounded-md before:block before:absolute before:left-auto before:right-0 before:inset-y-0 before:-z-[1] before:bg-[#00FF00] before:w-0 hover:before:w-full hover:before:left-0 hover:before:right-auto before:transition-all leading-none px-12 py-2 font-medium text-black hidden sm:block text-sm relative after:block after:absolute border border-black/80 hover:border-transparent rounded-md transition-all after:inset-0 after:-z-[2] after:bg-white after:rounded-md after:transition-all uppercase">
+                  Contact
                 </a>
               </li>
               <!-- HAMBURGER ICON -->
@@ -275,11 +270,11 @@
             </ul>
             <!-- RIGHT HAMBURGER -->
             <div class="w-5 gap-y-1.5 flex-col ml-8 hidden lg:flex">
-              <span class="block h-px w-full bg-black"></span>
+              <span class="block h-px w-full bg-white"></span>
               <span
-                class="block h-px ml-auto w-[70%] bg-black"></span>
+                class="block h-px ml-auto w-[70%] bg-white"></span>
               <span
-                class="block h-px ml-auto w-[70%] bg-black"></span>
+                class="block h-px ml-auto w-[70%] bg-white"></span>
             </div>
           </div>
         </div>
