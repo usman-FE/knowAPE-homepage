@@ -76,9 +76,9 @@
             ">
         <!-- TOP BAR -->
         <div
-          class="transition-all bg-[#00FF00] h-12 flex items-center shadow-md"
+          class="transition-all bg-[#00FF00] h-10 md:h-12 flex items-center shadow-md"
           id="topBar"
-          :class="{'-mt-12' : isSticky}">
+          :class="{'-mt-10 md:-mt-12' : isSticky}">
           <div
             class="container w-full max-w-screen-xl mx-auto px-4 flex items-center justify-between space-x-6">
             <div class="mx-auto md:m-0 flex">
@@ -178,13 +178,14 @@
         </div>
         <!-- DESKTOP HEADER -->
         <div
-          class="container max-w-screen-xl mx-auto px-4 py-1 h-16 lg:h-24 flex items-center">
+          :class="isSticky ? 'h-12 lg:h-[60px]' : 'h-16 lg:h-[75px]'"
+          class="container max-w-screen-xl mx-auto px-4 py-1 flex items-center transition-all">
           <div class="flex items-center justify-between w-full">
             <!-- HEADER LOGO -->
             <div>
               <a
                 href="#"
-                class="block w-32 lg:w-56 hover:opacity-60 transition-all">
+                class="block w-32 lg:w-48 hover:opacity-60 transition-all">
                 <img
                   src="images/KnowAPE_Logo-OnLight.png"
                   alt="knowAPE Logo"
@@ -330,6 +331,50 @@
         </div>
       </header>
       <!-- STICKY HEADER END -->
+      <!-- HERO SECTION START -->
+      <section class="h-screen w-full pt-[88px] sm:pt-[100px]">
+        <div
+          class="w-full h-full relative flex items-center justify-center bg-[url('../images/hero-image.png')] bg-cover bg-center bg-no-repeat">
+          <!-- HERO CONTENT -->
+          <div class="relative z-20 flex flex-col items-center px-4">
+            <!-- HEADING -->
+            <h1
+              class="text-white text-center flex flex-col font-['Avenir_Next']">
+              <span class="text-[25px] sm:text-[45px] font-light"
+                >UNLOCK YOUR GROWTH</span
+              >
+              <span class="text-[55px] sm:text-[100px] font-bold"
+                >POTENTIAL</span
+              >
+            </h1>
+            <!-- META TEXT -->
+            <p
+              class="text-center text-base sm:text-lg font-normal text-white max-w-xl mx-auto leading-9">
+              We consistently outperform other fintech advisory and
+              consulting firms by providing highly experienced,
+              multi-dimensional, individualized support from a
+              world-class team.
+            </p>
+            <!-- CTA -->
+            <div class="mt-7">
+              <a
+                href="#"
+                class="before:rounded-md before:block before:absolute before:left-auto before:right-0 before:inset-y-0 before:-z-[1] before:bg-[#00FF00] before:w-0 hover:before:w-full hover:before:left-0 hover:before:right-auto before:transition-all leading-none px-12 py-2 font-medium text-black text-sm md:text-lg relative after:block after:absolute border border-black/80 hover:border-transparent rounded-sm transition-all after:inset-0 after:-z-[2] after:bg-white after:rounded-md after:transition-all uppercase">
+                ELIMINATE COMPLICATED
+              </a>
+            </div>
+          </div>
+
+          <!-- OVERLAY -->
+          <div
+            class="absolute w-full h-full bg-black/70 inset-0 z-10"></div>
+        </div>
+      </section>
+      <!-- HERO SECTION END -->
+      <div class="h-screen w-full bg-blue-600"></div>
+      <div class="h-screen w-full bg-blue-700"></div>
+      <div class="h-screen w-full bg-blue-800"></div>
+      <div class="h-screen w-full bg-blue-900"></div>
     </main>
     <!-- MAIN CONTAINER END -->
   </body>
