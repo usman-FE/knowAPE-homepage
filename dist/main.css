@@ -1052,6 +1052,14 @@ video {
   background-image: url('../images/bg-mission-section.png');
 }
 
+.bg-\[url\(\'\.\.\/images\/bg-mission-section\.webp\'\)\] {
+  background-image: url('../images/bg-mission-section.webp');
+}
+
+.bg-\[url\(\'\.\.\/images\/hero-image\.webp\'\)\] {
+  background-image: url('../images/hero-image.webp');
+}
+
 .bg-cover {
   background-size: cover;
 }
