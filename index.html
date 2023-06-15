@@ -24,9 +24,9 @@
     <title>knowAPE | Home</title>
   </head>
 
-  <body class="bg-blue-600">
+  <body>
     <!-- MAIN CONTAINER START -->
-    <main class="h-full font-['Avenir']">
+    <main class="h-full font-['Avenir'] bg-black">
       <!-- STICKY HEADER START -->
       <header
         class="fixed w-full top-0 text-base z-50 shadow-md bg-black"
@@ -443,6 +443,78 @@
         </div>
       </section>
       <!-- GROWTH COMPANY SECTION END -->
+      <!-- MISSION SECTION START -->
+      <section
+        class="py-24 flex flex-col items-center justify-center bg-[url('../images/bg-mission-section.png')] bg-no-repeat bg-top md:bg-center bg-contain relative">
+        <!-- OVERLAY -->
+        <div
+          class="bg-black/50 absolute inset-0 w-full h-full z-10"></div>
+        <!-- SECTION HEADING -->
+        <div class="text-center px-4 relative z-20">
+          <span class="text-white font-semibold text-xl"
+            >IT’S WHAT HAPPENS WHEN YOU</span
+          >
+          <!-- HEADING -->
+          <h3
+            class="text-[35px] sm:text-[50px] text-[#00FF00] uppercase font-medium mt-4">
+            FOCUS ON FINTECH
+          </h3>
+          <!-- CTA -->
+          <div class="mt-16 relative z-0">
+            <a
+              href="#"
+              class="before:rounded-sm before:block before:absolute before:left-auto before:right-0 before:inset-y-0 before:-z-[1] before:bg-white before:w-0 hover:before:w-full hover:before:left-0 hover:before:right-auto before:transition-all leading-none px-6 sm:px-8 py-2 font-medium text-black hover:text-black text-xs sm:text-sm md:text-lg relative after:block after:absolute border border-black/80 hover:border-transparent rounded-sm transition-all after:inset-0 after:-z-[2] after:bg-[#00FF00] after:rounded-sm after:transition-all uppercase">
+              DISCOVER SOLUTIONS FOR EVERY MISSION
+            </a>
+          </div>
+        </div>
+
+        <!-- SECTION CARDS -->
+        <div
+          x-data="{
+          cards: [
+            {
+              text: `GLOBAL REGULATORY COMPLIANCE`
+            },
+            {
+              text: `PRIVACY / CYBER SECURITY`
+            },
+            {
+              text: `RISK AVOIDANCE`
+            },
+            {
+              text: `BUSINESS DEVELOPMENT`
+            },
+            {
+              text: `ENGINEERING & INTEGRATION`
+            },
+          ]
+        }"
+          class="px-4 grid grid-cols-1 md:grid-cols-2 gap-12 mt-24 relative z-20">
+          <!-- CARD -->
+          <template
+            x-for="(card, index) in cards"
+            :key="index">
+            <div
+              class="bg-black border-[5px] border-[#00FF00]/30 py-6 px-4 md:py-10 md:px-6 rounded-sm text-center">
+              <span
+                class="text-white font-medium text-base sm:text-lg md:text-xl"
+                x-text="card.text"></span>
+            </div>
+          </template>
+          <div
+            class="bg-[url('../images/bitmap.png')] bg-no-repeat bg-cover bg-center border-[5px] border-[#00FF00]/30 py-6 px-4 md:py-10 md:px-6 rounded-sm text-center relative">
+            <!-- OVERLAY -->
+            <div
+              class="bg-black/50 absolute inset-0 w-full h-full z-10"></div>
+            <span
+              class="text-white font-medium text-base sm:text-lg md:text-xl relative z-20"
+              >DIGITAL TRANSFORMATION</span
+            >
+          </div>
+        </div>
+      </section>
+      <!-- MISSION SECTION END -->
     </main>
     <!-- MAIN CONTAINER END -->
   </body>
