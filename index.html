@@ -1340,7 +1340,8 @@
                   </div>
                   <!-- MESSAGE -->
                   <div class="md:col-span-2">
-                    <div class="mb-5 flex justify-between gap-3">
+                    <div
+                      class="mb-5 flex flex-col md:flex-row justify-between gap-3">
                       <label
                         for="message"
                         class="font-bold"
@@ -1372,6 +1373,303 @@
         </div>
       </section>
       <!-- CONTACT SECTION END -->
+      <!-- FOOTER SECTION START -->
+      <footer class="bg-white pt-24 pb-14">
+        <div class="container max-w-[1300px] mx-auto px-4">
+          <!-- UPPER FOOTER SECTION -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 pb-16 border-b-2 border-[#C0C0C0]">
+            <div>
+              <div class="w-52">
+                <img
+                  src="images/KnowAPE_Logo-OnLight.webp"
+                  alt="knowAPE Logo"
+                  class="w-full h-auto" />
+              </div>
+              <p class="mt-7 font-medium text-sm">
+                Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Eaque provident alias autem ipsum molestias
+                nesciunt quidem ratione officia illo harum. Labore,
+                quidem? Et recusandae ut totam. Fugiat, tenetur
+                libero. Ut officia, perspiciatis tempore deserunt,
+                repellat et libero sint suscipit consectetur beatae
+                voluptatibus nobis aut!
+              </p>
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-5">
+                <div class="flex flex-col gap-5">
+                  <a
+                    href="#"
+                    class="text-sm font-semibold"
+                    >About</a
+                  >
+                  <a
+                    href="#"
+                    class="text-sm font-semibold"
+                    >Contact Us</a
+                  >
+                </div>
+                <div class="flex flex-col gap-5">
+                  <span class="text-sm font-semibold">Language</span>
+                  <select
+                    class="border border-[#979797]"
+                    name="language"
+                    id="language">
+                    <option value="english">English</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MIDDLE FOOTER SECTION -->
+          <div
+            x-data="{
+              footerLinks: [
+                {
+                  title: 'What we do',
+                  subLinks: [
+                    {
+                      title: 'Lorem, ipsum dolor.',
+                      url: '#',
+                    },
+                    {
+                      title: 'Lorem, ipsum dolor.',
+                      url: '#',
+                    },
+                    {
+                      title: 'Lorem, ipsum dolor.',
+                      url: '#',
+                    },
+                    {
+                      title: 'Lorem, ipsum dolor.',
+                      url: '#',
+                    },
+                    {
+                      title: 'Lorem, ipsum dolor.',
+                      url: '#',
+                    },
+                    {
+                      title: 'Lorem, ipsum dolor.',
+                      url: '#',
+                    }
+                  ]
+                },
+                {
+                  title: 'Who We Serve',
+                  subLinks: [
+                    {
+                      title: 'Lorem, ipsum dolor.',
+                      url: '#',
+                    },
+                    {
+                      title: 'Lorem, ipsum dolor.',
+                      url: '#',
+                    },
+                    {
+                      title: 'Lorem, ipsum dolor.',
+                      url: '#',
+                    },
+                    {
+                      title: 'Lorem, ipsum dolor.',
+                      url: '#',
+                    },
+                    {
+                      title: 'Lorem, ipsum dolor.',
+                      url: '#',
+                    },
+                    {
+                      title: 'Lorem, ipsum dolor.',
+                      url: '#',
+                    }
+                  ]
+                },
+                {
+                  title: 'Solutions',
+                  subLinks: [
+                    {
+                      title: 'Lorem, ipsum dolor.',
+                      url: '#',
+                    },
+                    {
+                      title: 'Lorem, ipsum dolor.',
+                      url: '#',
+                    },
+                    {
+                      title: 'Lorem, ipsum dolor.',
+                      url: '#',
+                    },
+                    {
+                      title: 'Lorem, ipsum dolor.',
+                      url: '#',
+                    },
+                    {
+                      title: 'Lorem, ipsum dolor.',
+                      url: '#',
+                    },
+                    {
+                      title: 'Lorem, ipsum dolor.',
+                      url: '#',
+                    }
+                  ]
+                },
+                {
+                  title: 'Learn',
+                  subLinks: [
+                    {
+                      title: 'knowAPE Blog',
+                      url: '#',
+                    },
+                    {
+                      title: 'Privacy and Security Hub',
+                      url: '#',
+                    },
+                    {
+                      title: 'Technical Blog',
+                      url: '#',
+                    },
+                    {
+                      title: 'Education Blog',
+                      url: '#',
+                    },
+                    {
+                      title: 'Business Blog',
+                      url: '#',
+                    },
+                    {
+                      title: 'Fintech Developers Blog',
+                      url: '#',
+                    }
+                  ]
+                },
+                {
+                  title: 'Support',
+                  subLinks: [
+                    {
+                      title: 'Help Center',
+                      url: '#',
+                    },
+                    {
+                      title: 'Hire a Professional',
+                      url: '#',
+                    },
+                    {
+                      title: 'Report Abuse',
+                      url: '#',
+                    },
+                    {
+                      title: 'Status',
+                      url: '#',
+                    },
+                  ]
+                },
+                {
+                  title: 'Company',
+                  subLinks: [
+                    {
+                      title: 'About',
+                      url: '#',
+                    },
+                    {
+                      title: 'Accessibility',
+                      url: '#',
+                    },
+                    {
+                      title: 'Affiliates',
+                      url: '#',
+                    },
+                    {
+                      title: 'Careers & Culture',
+                      url: '#',
+                    },
+                    {
+                      title: 'Client Engagement Agreements',
+                      url: '#',
+                    },
+                    {
+                      title: 'Investment Opportunities',
+                      url: '#',
+                    }
+                    ,
+                    {
+                      title: 'Legal',
+                      url: '#',
+                    }
+                    ,
+                    {
+                      title: 'Press & Media',
+                      url: '#',
+                    }
+                    ,
+                    {
+                      title: 'Responsible AI',
+                      url: '#',
+                    }
+                    ,
+                    {
+                      title: 'Security',
+                      url: '#',
+                    }
+                    ,
+                    {
+                      title: 'Trust Center',
+                      url: '#',
+                    }
+                  ]
+                },
+              ]
+            }"
+            class="py-16 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-5 gap-y-14">
+            <template
+              x-for="(footerLink, index) in footerLinks"
+              :key="index">
+              <div>
+                <h6
+                  class="capitalize text-lg md:text-xl font-bold mb-6"
+                  x-text="footerLink.title"></h6>
+                <ul class="flex flex-col gap-3">
+                  <template
+                    x-for="(subLink, index) in footerLink.subLinks"
+                    :key="index">
+                    <li>
+                      <a
+                        :href="subLink.url"
+                        class="font-medium hover:underline transition-all"
+                        x-text="subLink.title"></a>
+                    </li>
+                  </template>
+                </ul>
+              </div>
+            </template>
+          </div>
+        </div>
+        <div class="border-t-2 border-[#C0C0C0] pt-14">
+          <div class="container max-w-[1300px] mx-auto px-4">
+            <div
+              class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+              <a
+                href="#"
+                class="font-medium hover:underline"
+                >knowAPE Manifesto</a
+              >
+              <a
+                href="#"
+                class="font-medium hover:underline"
+                >Privacy Policy</a
+              >
+              <a
+                href="#"
+                class="font-medium hover:underline"
+                >Terms of Service</a
+              >
+              <a
+                href="#"
+                class="font-medium hover:underline"
+                >Cookies</a
+              >
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- FOOTER SECTION END -->
     </main>
     <!-- MAIN CONTAINER END -->
   </body>
