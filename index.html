@@ -1109,6 +1109,269 @@
         </div>
       </section>
       <!-- NEWS SECTION END -->
+      <!-- CONTACT SECTION START -->
+      <section class="bg-black py-24">
+        <div class="container max-w-[1300px] mx-auto px-4">
+          <!-- SECTION HEADING -->
+          <h4
+            class="text-[28px] md:text-[35px] font-semibold text-white">
+            Contact Us
+          </h4>
+          <!-- UNDERLINE -->
+          <span
+            class="h-1 w-24 bg-[#00FF00] inline-block mt-2"></span>
+          <!-- SECTION CONTENT -->
+          <div
+            class="mt-3 grid grid-cols-1 md:grid-cols-12 gap-3 text-white">
+            <!-- LEFT CONTENT -->
+            <div class="col-span-1 md:col-span-3">
+              <ul class="flex flex-col gap-11">
+                <li class="flex items-center gap-2">
+                  <span>
+                    <img
+                      src="images/pin.svg"
+                      alt="Location icon" />
+                  </span>
+                  <span>Bahamas</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span>
+                    <img
+                      src="images/pin.svg"
+                      alt="Location icon" />
+                  </span>
+                  <span>Gibraltar</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span>
+                    <img
+                      src="images/pin.svg"
+                      alt="Location icon" />
+                  </span>
+                  <span>Singapore</span>
+                </li>
+              </ul>
+            </div>
+            <!-- RIGHT CONTENT -->
+            <div
+              class="border border-white rounded-md col-span-1 md:col-span-9 mt-8 md:mt-0">
+              <form>
+                <div
+                  class="grid grid-cols-1 md:grid-cols-2 gap-y-11 gap-x-20 px-4 py-8">
+                  <!-- NAME -->
+                  <div class="flex flex-col">
+                    <label
+                      for="name"
+                      class="font-bold"
+                      >Company Name<span class="text-[#00FF00]"
+                        >*</span
+                      >
+                    </label>
+                    <input
+                      class="border-b-2 mt-2 border-[#6D7278] bg-transparent outline-none focus:border-[#00FF00] transition-all"
+                      type="text"
+                      name="name"
+                      id="name"
+                      required />
+                  </div>
+                  <!-- COUNTRY -->
+                  <div class="flex flex-col">
+                    <label
+                      for="country"
+                      class="font-bold"
+                      >Country of Incorporation
+                    </label>
+                    <select
+                      class="border-b-2 mt-2.5 block border-[#6D7278] bg-transparent outline-none font-medium"
+                      name="country"
+                      id="country">
+                      <option value="canada">Canada</option>
+                    </select>
+                  </div>
+                  <!-- WEBSITE -->
+                  <div class="flex flex-col">
+                    <label
+                      for="website"
+                      class="font-bold"
+                      >Company Website<span class="text-[#00FF00]"
+                        >*</span
+                      >
+                    </label>
+                    <input
+                      class="border-b-2 mt-2 border-[#6D7278] bg-transparent outline-none focus:border-[#00FF00] transition-all"
+                      type="text"
+                      name="website"
+                      id="website"
+                      required />
+                  </div>
+                  <!-- DESCRIBE -->
+                  <div class="flex flex-col">
+                    <label
+                      for="describe"
+                      class="font-bold"
+                      >Do any of the following describe your
+                      company?<span class="text-[#00FF00]">*</span>
+                    </label>
+                    <select
+                      class="border-b-2 mt-2.5 block border-[#6D7278] bg-transparent outline-none font-medium"
+                      name="describe"
+                      id="describe">
+                      <option value="0">Select One</option>
+                    </select>
+                  </div>
+                  <!-- CONTACT NAME -->
+                  <div class="flex flex-col">
+                    <label
+                      for="contactName"
+                      class="font-bold"
+                      >Contact Name<span class="text-[#00FF00]"
+                        >*</span
+                      >
+                    </label>
+                    <input
+                      class="border-b-2 mt-2 border-[#6D7278] bg-transparent outline-none focus:border-[#00FF00] transition-all"
+                      type="text"
+                      name="contactName"
+                      id="contactName"
+                      required />
+                  </div>
+                  <!-- CONTACT EMAIL -->
+                  <div class="flex flex-col">
+                    <label
+                      for="contactEmail"
+                      class="font-bold"
+                      >Contact Email<span class="text-[#00FF00]"
+                        >*</span
+                      >
+                    </label>
+                    <input
+                      class="border-b-2 mt-2 border-[#6D7278] bg-transparent outline-none focus:border-[#00FF00] transition-all"
+                      type="text"
+                      name="contactEmail"
+                      id="contactEmail"
+                      required />
+                  </div>
+                  <!-- CONTACT NUMBER -->
+                  <div class="flex flex-col">
+                    <label
+                      for="contactNumber"
+                      class="font-bold"
+                      >Contact Number #<span class="text-[#00FF00]"
+                        >*</span
+                      >
+                    </label>
+                    <input
+                      class="border-b-2 mt-2 border-[#6D7278] bg-transparent outline-none focus:border-[#00FF00] transition-all appearance-none"
+                      type="number"
+                      name="contactNumber"
+                      id="contactNumber"
+                      required />
+                  </div>
+                  <!-- CONTACT TELEGRAM -->
+                  <div class="flex flex-col">
+                    <label
+                      for="contactTelegram"
+                      class="font-bold"
+                      >Contact Telegram
+                    </label>
+                    <input
+                      class="border-b-2 mt-2 border-[#6D7278] bg-transparent outline-none focus:border-[#00FF00] transition-all appearance-none"
+                      type="text"
+                      name="contactTelegram"
+                      id="contactTelegram"
+                      required />
+                  </div>
+                  <!-- SERVICES -->
+                  <div class="md:col-span-2">
+                    <p class="font-bold mb-3">
+                      Which services are you interested in?
+                    </p>
+                    <div
+                      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                      <!-- COMPLIANCE -->
+                      <div class="flex gap-2">
+                        <input
+                          type="checkbox"
+                          name="compliance"
+                          id="compliance" />
+                        <label
+                          for="compliance"
+                          class="text-sm select-none font-medium"
+                          >Compliance Advisory</label
+                        >
+                      </div>
+                      <!-- C-SUITE -->
+                      <div class="flex gap-2">
+                        <input
+                          type="checkbox"
+                          name="suite"
+                          id="suite" />
+                        <label
+                          for="suite"
+                          class="text-sm select-none font-medium"
+                          >C-Suite Advisory</label
+                        >
+                      </div>
+                      <!-- RISK -->
+                      <div class="flex gap-2">
+                        <input
+                          type="checkbox"
+                          name="risk"
+                          id="risk" />
+                        <label
+                          for="risk"
+                          class="text-sm select-none font-medium"
+                          >Risk Management</label
+                        >
+                      </div>
+                      <!-- OTHER -->
+                      <div class="flex gap-2">
+                        <input
+                          type="checkbox"
+                          name="other"
+                          id="other" />
+                        <label
+                          for="other"
+                          class="text-sm select-none font-medium"
+                          >Other</label
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- MESSAGE -->
+                  <div class="md:col-span-2">
+                    <div class="mb-5 flex justify-between gap-3">
+                      <label
+                        for="message"
+                        class="font-bold"
+                        >Your Message</label
+                      >
+                      <span class="text-[#6D7278]"
+                        >Or send to lookingforhelp@KnowAPE.com</span
+                      >
+                    </div>
+                    <textarea
+                      class="bg-[#6D7278] w-full outline-none focus:border-[#00FF00] p-4"
+                      name="message"
+                      rows="5"
+                      id="message"></textarea>
+                  </div>
+                  <!-- SUBMIT -->
+                  <div
+                    class="md:col-span-2 flex items-center justify-end mt-14">
+                    <button
+                      type="submit"
+                      class="text-black border-none outline-none bg-[#00FF00] text-xl font-medium px-4 py-2 uppercase hover:bg-white transition-all">
+                      Send
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- CONTACT SECTION END -->
     </main>
     <!-- MAIN CONTAINER END -->
   </body>
